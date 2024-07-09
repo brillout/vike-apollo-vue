@@ -9,8 +9,7 @@ import compression from 'compression'
 import { renderPage } from 'vike/server'
 import { root } from './root.js'
 import fetch from 'cross-fetch'
-import apollo from '@apollo/client'
-const { ApolloClient, createHttpLink, InMemoryCache } = apollo
+import { ApolloClient, createHttpLink, InMemoryCache } from '@apollo/client/core/index.js'
 const isProduction = process.env.NODE_ENV === 'production'
 
 startServer()

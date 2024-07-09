@@ -2,7 +2,7 @@
 export { onRenderClient }
 
 import { createVueApp } from './createVueApp'
-import { ApolloClient, InMemoryCache, HttpLink } from '@apollo/client'
+import { ApolloClient, InMemoryCache, HttpLink } from '@apollo/client/core/index.js'
 import fetch from 'cross-fetch'
 
 function onRenderClient(pageContext) {
